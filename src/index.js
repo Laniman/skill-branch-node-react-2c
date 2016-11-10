@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 
 app.get('/', (req, res) => {
-  res.end(`@${parseUsername(req.query.username)}`);
+  res.end(parseUsername(req.query.username));
 });
 
 app.listen(3000, () => {

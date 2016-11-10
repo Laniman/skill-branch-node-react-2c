@@ -54,6 +54,7 @@
     "sinon": "^2.0.0-pre.3"
   },
   "scripts": {
-    "dev": "nodemon --exec babel-node -- src/index.js"
+    "dev": "nodemon --exec babel-node -- src/index.js",
+    "test": "mocha --compilers js:babel-register"
   }
 }
